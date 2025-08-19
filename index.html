@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sayaf Hameed Sheikh</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="3D portfolio using only HTML, CSS, and JS. Animated lines background reacting to cursor. No frameworks." />
+    
+</head>
+
+<body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="overlay" aria-hidden="true"></div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="brand">
+                    <span class="dot"></span> <a href="#home"><span class="title" style="cursor: pointer;">SAYAF HAMEED SHEIKH</span></a>
+                </div>
+
+                <!-- Nav links -->
+                <div class="nav-links" id="nav-links">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#contact">Contact</a>
+                    <a class="tag btn" target="_self" download
+                        href="https://drive.google.com/file/d/1dgYW1xxPtT-FbCthLOU36vATYq4zkQaC/view?usp=drive_link">Resume</a>
+
+                </div>
+
+                <!-- Hamburger (last, so it stays on the right) -->
+                <div class="hamburger" id="hamburger">☰</div>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-grid">
+                <div>
+                    <span class="badge"><span class="pulse"></span> Available for freelance , on-site & remote
+                        roles</span>
+                    <h1>Hi, I’m <span style="color: var(--accent);"> Sayaf Hameed Sheikh</span> And I'm a <br> <span
+                            class="multiple-text" style="padding: 10px;"></span></h1>
+                    <p class="lead">I specialize in <span style="color: goldenrod; text-align: justify;">JavaScript,
+                            Node.js,React,ExpressJs,UI/UX,Tailwind <br> SQL,MongoDB </span> and modern databases. I love
+                        solving
+                        tricky problems, optimizing performance, and elevating UX with delightful micro‑interactions.
+                    </p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="#projects">View Projects</a>
+                        <a class="btn" href="#contact">Contact Me</a>
+                        <div class="social-media">
+                            <a target="_blank" href="https://www.facebook.com/saayaf1913?mibextid=ZbWKwL"><i
+                                    class="bx bxl-facebook"></i></a>
+                            <a target="_blank" href="https://x.com/saayafhameed"><i class="bx bxl-twitter"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/sayaf-hameed-sheikh-08a5b9226"><i
+                                    class="bx bxl-linkedin"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/hum.raax/"><i
+                                    class="bx bxl-instagram-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-3d-card">
+                    <div class="card3d tilt" data-tilt>
+                        <div class="glow"></div>
+                        <!-- <div class="big">Building 3D‑ish UX</div>
+            <div class="floating">Vanilla HTML • CSS • JS</div> -->
+                        <div class="home-img">
+                            <img src="https://i.postimg.cc/MT1W4wjb/IMG-20250805-160500-528.webp" alt="My Image"  >
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2 class="section-title">About</h2>
+            <div class="grid cols-2" style="margin-top: 5rem;">
+                <div class="card tilt">
+                    <h3 class="tilt-z2">Introduction</h3>
+                    <p class="muted tilt-z1"> Hello, my name is Sayaf Hameed Sheikh. I have completed my
+                        B.Tech in Computer Science from Alagappa Chettiar Government College of engineering and
+                        technology Tamil Nadu.
+                        With a strong foundation in programming, web technologies, and problem-solving, I am pursuing my
+                        career goal of becoming a Full Stack Developer.
+                        My focus is on writing clean, scalable
+                        code and delivering impactful solutions.</p>
+                </div>
+                <div class="card tilt">
+                    <h3 class="tilt-z2">Full‑Stack Focus</h3>
+                    <p class="muted tilt-z1"> I am flexible, and reliable and possess excellent timekeeping skills. I
+                        am an enthusiastic, self motivated, reliable, responsible and
+                        hard-working person. I am a mature team worker and adaptable to all
+                        challenging situations. I am able to work well both in a team
+                        environment as well as using my own initiative</p>
+                </div>
+                <div class="card tilt ">
+                    <h3 class="tilt-z2">Performance Minded</h3>
+                    <p class="muted tilt-z1">"Driven by results, powered by precision.”<br>
+
+                        “Optimizing every detail for maximum impact.”<br>
+
+                        “Where creativity meets high performance.”<br>
+
+                        “Focused on efficiency, built for excellence.”<br>
+
+                        “Turning ideas into fast, scalable, and reliable solutions.”<br>
+
+                        “Performance isn’t just a goal—it’s my mindset.”<br>
+
+                        “Crafting experiences that perform as great as they look"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="grid cols-3">
+                <div class="card tilt">
+                    <h4 class="tilt-z2">Frontend</h4>
+                    <p class="muted tilt-z1">HTML5, CSS3, JavaScript, Web Components, Canvas/WebGL basics, React
+                        ,Tailwind,Bootstrap
+                    </p>
+                </div>
+                <div class="card tilt">
+                    <h4 class="tilt-z2">Backend</h4>
+                    <p class="muted tilt-z1">Node.js, Express, REST, WebSockets, Auth,Git ,Github</p>
+                </div>
+                <div class="card tilt">
+                    <h4 class="tilt-z2">Data & DevOps</h4>
+                    <p class="muted tilt-z1">PostgreSQL, MongoDB,MySql, Docker, SQL, Cloud (basic)</p>
+                </div>
+                <div class="card tilt">
+                    <h4 class="tilt-z2">Programming Languages</h4>
+                    <p class="muted tilt-z1"> Java,Python,C,JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid cols-3">
+                <div class="card tilt">
+                    <a href="https://sayafhameed.github.io/Personal-Portfolio-Responsive/" target="_self"
+                        rel="noreferrer noopener">
+                        <h4 class="tilt-z2">Portfolio (old)</h4>
+
+                        <img src="https://i.postimg.cc/gc3s5MNd/portfolio.jpg" alt="project-thumbnail"
+                            style=" width: 100%; border-radius: 15px; height: 210px; ">
+                        <p class="muted tilt-z1">A fully responsive personal portfolio website built using HTML, CSS,
+                            and JavaScript. It showcases my projects, skills, and contact details with a clean design,
+                            smooth animations, and mobile-friendly layout.
+                        </p>
+                    </a>
+                    <a href="https://github.com/SayafHameed/Personal-Portfolio-Responsive" target="_self">
+                        <i class='bx bxl-github' style="font-size: xx-large;"></i>
+                    </a>
+                </div>
+                <div class="card tilt">
+                    <a href="https://sayafhameed.github.io/SCT_WD_1/" target="_self" rel="noreferrer noopener">
+                        <h4 class="tilt-z2">Code Wave (Landing Page)</h4>
+
+                        <img src="https://i.postimg.cc/kMSYCMM0/codewave.jpg" alt="project-thumbnail"
+                            style=" width: 100%; border-radius: 15px; height: 210px; ">
+                        <p class="muted tilt-z1">This project is a fully responsive, modern landing page designed with
+                            HTML, CSS, and JavaScript, featuring smooth animations, interactive navigation, and a
+                            visually appealing layout. The design adapts seamlessly across devices (desktop, tablet, and
+                            mobile), ensuring an engaging user experience on all screen sizes.
+                        </p>
+                    </a>
+                    <a href="https://github.com/SayafHameed/SCT_WD_1" target="_self">
+                        <i class='bx bxl-github' style="font-size: xx-large;"></i>
+                    </a>
+                </div>
+
+                <div class="card tilt">
+                    <a href="https://sayafhameed.github.io/SCT_WD_2/" target="_self" rel="noreferrer noopener">
+                        <h4 class="tilt-z2">Stopwatch</h4>
+
+                        <img src="https://i.postimg.cc/QMBkqSH2/stopwatch.jpg" alt="project-thumbnail"
+                            style=" width: 100%; border-radius: 15px; height: 210px; ">
+                        <p class="muted tilt-z1">The Stopwatch Web Application is a lightweight, browser-based tool
+                            built using HTML, CSS, and JavaScript. It allows users to track elapsed time with precision
+                            up to milliseconds. The application is designed with a clean and responsive user interface,
+                            making it simple and intuitive to use.
+                        </p>
+                    </a>
+                    <a href="https://github.com/SayafHameed/SCT_WD_2" target="_self">
+                        <i class='bx bxl-github' style="font-size: xx-large;"></i>
+                    </a>
+                </div>
+
+                <div class="card tilt">
+                    <a href="https://sayafhameed.github.io/SCT_WD_3/" target="_self" rel="noreferrer noopener">
+                        <h4 class="tilt-z2">Quiz App</h4>
+
+                        <img src="https://i.postimg.cc/NFt6Bcpt/quizapp.jpg" alt="project-thumbnail"
+                            style=" width: 100%; border-radius: 15px; height: 210px; ">
+                        <p class="muted tilt-z1">
+                            The Advanced Quiz Application is a fully interactive, web-based quiz system built using
+                            HTML, CSS, and JavaScript. It is designed to provide an engaging way for users to test their
+                            knowledge while offering modern features and a smooth user experience.
+                        </p>
+                    </a>
+                    <a href="https://github.com/SayafHameed/SCT_WD_3" target="_self">
+                        <i class='bx bxl-github' style="font-size: xx-large;"></i>
+                    </a>
+                </div>
+
+                <div class="card tilt">
+                    <a href="https://sayafhameed.github.io/SCT_WD_4/" target="_self" rel="noreferrer noopener">
+                        <h4 class="tilt-z2">ToDo App</h4>
+
+                        <img src="https://i.postimg.cc/sfKQv727/todoapp.jpg" alt="project-thumbnail"
+                            style=" width: 100%; border-radius: 15px; height: 210px; ">
+                        <p class="muted tilt-z1">
+                            This To-Do Web App is a fully functional, feature-rich task management application built
+                            using HTML, CSS, and JavaScript. It helps users organize their daily activities effectively
+                            with modern UI and productivity-enhancing tools.
+                        </p>
+                    </a>
+                    <a href="https://github.com/SayafHameed/SCT_WD_4" target="_self">
+                        <i class='bx bxl-github' style="font-size: xx-large;"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- certification -->
+        <section id="certifications">
+            <h2 class="section-title">Certificates</h2>
+            <div class="grid cols-3">
+                <a class="card tilt" href="https://drive.google.com/file/d/1xbYoB-8tMBgTCTJgLxjuuDOiYXqjmxpR/view?usp=drivesdk" target="_self" rel="noreferrer noopener">
+                    <h4 class="tilt-z2">Full JavaScript Course (UDEMY)</h4>
+                    <img src="https://i.postimg.cc/t4NLjqkq/js.jpg" alt="certificate-image" style="width: 100%; border-radius: 15px;">
+                    <p class="muted tilt-z1">A comprehensive JavaScript course covering fundamentals to advanced
+                        concepts, including DOM manipulation, ES6+, asynchronous programming, and real-world projects to
+                        build strong web development skills.
+                    </p>
+                </a>
+                <a class="card tilt" href="https://drive.google.com/file/d/1v9tgSdqAmaVnMmyk0XeLcafChrMQvmKD/view?usp=drivesdk" target="_self" rel="noreferrer noopener">
+                    <h4 class="tilt-z2">Java Programming (INFOSYS)</h4>
+                    <img src="https://i.postimg.cc/Wzd9qj0k/java-infosys.jpg" alt="certificate-image" style="width: 100%; border-radius: 15px;">
+                    <p class="muted tilt-z1">A complete Java course covering core concepts such as OOP principles, data
+                        structures, exception handling, collections, multithreading, and JDBC, along with hands-on
+                        projects to strengthen programming and problem-solving skills.
+                    </p>
+                </a>
+                <a class="card tilt" href="https://drive.google.com/file/d/1yARMZp9ORuKhsA18Fo-RUhi8PGwMENCF/view?usp=drivesdk" target="_self" rel="noreferrer noopener">
+                    <h4 class="tilt-z2">Java for Beginners(UDEMY)</h4>
+                    <img src="https://i.postimg.cc/sfBdhRjm/java-udemy.jpg" alt="certificate-image" style="width: 100%; border-radius: 15px;">
+                    <p class="muted tilt-z1">A complete Java course covering core concepts such as OOP principles, data
+                        structures, exception handling, collections, multithreading, and JDBC, along with hands-on
+                        projects to strengthen programming and problem-solving skills.</p>
+                </a>
+                <a class="card tilt" href="https://drive.google.com/file/d/1FCZvtAnkHR8EXrzwJ1nQbJLZ_wW4Iac4/view?usp=drivesdk" target="_self" rel="noreferrer noopener">
+                    <h4 class="tilt-z2">Certificate of Achievement(TCS)</h4>
+                    <img src="https://i.postimg.cc/J4JfpcBB/tcs.jpg" alt="certificate-image" style="width: 100%; border-radius: 15px;">
+                    <p class="muted tilt-z1">Communication skill, Presentation Skill,Resume writing ,Group Discussion,Interview Skills,Bussiness Etiquette,Overview of AI
+                        ,Effective email writing,IT foundation skills and much moure...
+                    </p>
+                </a>
+                <a class="card tilt" href="https://drive.google.com/file/d/1rB5GPkcm4z2m-gZ2Sam9Pf3Vn0IkyE2h/view?usp=drivesdk" target="_self" rel="noreferrer noopener">
+                    <h4 class="tilt-z2">Web Development Intership(NSIC-chennai)</h4>
+                    <img src="https://i.postimg.cc/MKyL76h7/nsic.jpg" alt="certificate-image"
+                        style="width: 100%; border-radius: 15px;height: 210px;">
+                    <p class="muted tilt-z1">Gained hands-on experience in building and maintaining responsive websites
+                        using HTML, CSS, JavaScript, and modern frameworks. Worked on real-world projects, improved
+                        coding practices, and collaborated with teams to deliver user-friendly web solutions.</p>
+                </a>
+                <a class="card tilt" href="https://drive.google.com/file/d/1mAM6WSOmBG5BiB4ieBz5_V0N7lkzNRiC/view?usp=drivesdk" target="_self" rel="noreferrer noopener">
+                    <h4 class="tilt-z2">Web Development Intership (SkillCraft Technology)</h4>
+                    <img src="https://i.postimg.cc/1zRbRk7p/skillcraft.jpg" alt="certificate-image"
+                        style="width: 100%; border-radius: 15px; height: 210px;">
+                    <p class="muted tilt-z1">Gained hands-on experience in building and maintaining responsive websites
+                        using HTML, CSS, JavaScript, and modern frameworks. Worked on real-world projects, improved
+                        coding practices, and collaborated with teams to deliver user-friendly web solutions.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="grid cols-2">
+                <div class="card">
+                    <p class="muted links">Email: <a target="_blank"
+                            href="mailto:sheikhsayaf@gmail.com">sheikhsayaf@gmail.com</a><br /> <br> <br> LinkedIn: <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/sayaf-hameed-sheikh-08a5b9226/">linkedin.com/sayafhameed</a><br /><br /><br />GitHub:
+                        <a target="_blank" href="https://github.com/SayafHameed">github.com/Sayafhameed</a>
+                    </p>
+                </div>
+                <form class="card" action="https://formspree.io/f/xjkoqblz" method="POST" target="_parent"
+                    onsubmit="alert('I will back to you very soon..')">
+
+                    <label for="name">Name<br /><input name="name" required type="text" placeholder="Your name"
+                            style="width:100%;margin-top:6px;padding:10px 12px;border-radius:12px;border:1px solid rgba(148,163,184,.25);background:#0b1220;color:var(--text);"></label>
+                    <label for="email" style="display:block;margin-top:12px;">Email<br /><input name="email" required
+                            type="email" placeholder="you@example.com"
+                            style="width:100%;margin-top:6px;padding:10px 12px;border-radius:12px;border:1px solid rgba(148,163,184,.25);background:#0b1220;color:var(--text);"></label>
+                    <label for="message" style="display:block;margin-top:12px;">Message<br /><textarea name="message"
+                            required rows="4" placeholder="Write your message here..."
+                            style="width:100%;margin-top:6px;padding:10px 12px;border-radius:12px;border:1px solid rgba(148,163,184,.25);background:#0b1220;color:var(--text);"></textarea></label>
+                    <button class="btn primary" type="submit" style="margin-top:14px;">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Resume (simple placeholder)
+        <section id="resume">
+            <h2 class="section-title">Resume</h2>
+            <div class="card">
+                <p class="muted">Download a PDF resume or keep this section as a condensed bio. Replace content with
+                    your details.</p>
+                <div class="cta-row">
+                    <a class="btn" download href="#">Download PDF</a>
+                    <a class="btn" href="#contact">Hire Me</a>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <footer>
+        <div class="container">© <span id="year"></span> Sayaf Hameed Sheikh Built with ♥ </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
