@@ -162,6 +162,13 @@
             navLinks.classList.toggle("show");
         });
 
+        // Close hamburger when a nav link is clicked
+document.querySelectorAll("#nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("show");
+  });
+});
+
         // Highlight active nav link on scroll
         const sections = document.querySelectorAll("section");
         const navItems = document.querySelectorAll(".nav-links a");
@@ -198,6 +205,7 @@
         document.querySelectorAll("section").forEach(section => {
             observer.observe(section);
         });
+
 
 
 
